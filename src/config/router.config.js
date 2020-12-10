@@ -71,6 +71,30 @@ export const asyncRouterMap = [
           }
         ]
       },
+      // echarts
+      {
+        path: '/echarts',
+        name: 'echarts',
+        component: RouteView,
+        redirect: '/echarts/echarts-bar',
+        meta: { title: 'echarts', icon: 'bars', permission: [ 'table' ] },
+        children: [
+          {
+            path: '/echarts/echarts-bar',
+            name: 'EchartsBar',
+            hideChildrenInMenu: true, // 强制显示 MenuItem 而不是 SubMenu
+            component: () => import('@/views/echarts/bar'),
+            meta: { title: '柱形图叠加应用', keepAlive: true, permission: [ 'table' ] }
+          },
+          {
+            path: '/echarts/echarts-line',
+            name: 'EchartsLine',
+            hideChildrenInMenu: true, // 强制显示 MenuItem 而不是 SubMenu
+            component: () => import('@/views/echarts/bar'),
+            meta: { title: '折线图应用', keepAlive: true, permission: [ 'table' ] }
+          },
+        ]
+      },
       // list
       {
         path: '/list',

@@ -417,7 +417,19 @@ const userNav = (options) => {
       'component': 'Analysis',
       'path': '/dashboard/analysis'
     },
-
+    // echarts
+    {
+      'name': 'echarts',
+      'parentId': 0,
+      'id': 110,
+      'meta': {
+        'icon': 'form',
+        'title': '图表页',
+        'show': true
+      },
+      'redirect': '/echarts/bar',
+      'component': 'Echarts'
+    },
     // form
     {
       'name': 'form',
