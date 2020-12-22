@@ -8,6 +8,7 @@ assignees: ''
 ---
 
 **Question （问题描述）**
+
 How to use component `s-table` paging
 
 **Describe the solution you'd like （你期待的是什么？）**
